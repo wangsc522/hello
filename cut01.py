@@ -13,7 +13,7 @@ def getGameData(dataMainDir,userAccount):
                 temp=doc[3].strip().strip("\[").strip("\]").split("=")[1].split("：")
                 data.append(temp[0])
                 data.append(temp[1])
-                data.append(doc[4].strip().strip("\[").strip("\]").split("=")[1])
+                data.append(doc[4].strip().strip("\[").strip("\]").split("=")[1].split(" ")[1])
                 temp=doc[5].strip().strip("\[").strip("\]").split("=")[0].split(" ")
                 data.append(temp[0])
                 data.append(temp[2])
